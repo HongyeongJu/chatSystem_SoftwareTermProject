@@ -1,7 +1,7 @@
 <?
 session_start();
 
-$id = $_SESSION[id];
+$id = $_SESSION[user_id];
 
 if(isset($id)){
     $name = $id;
@@ -9,7 +9,7 @@ if(isset($id)){
     $name = "unknown";
 }
 
-$db = new mysqli('localhost', 'game_admin', '123', 'game_flatform_db');
+$db = new mysqli('localhost', 'chat_admin', '123', 'chat_flatform_db');
 $db->query('SET NAMES utf8');
 $db->query('
 	INSERT INTO chat(name, msg, date)

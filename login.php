@@ -33,13 +33,13 @@ include "server_connect/connect.php";
 					<img src="imagefolder/koreatechLogo.png" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" method="post" action="function/login.php">
 					<span class="login100-form-title">
 						아우누리 종합정보 시스템 로그인
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="아이디입력">
+						<input class="input100" type="text" name="user_id" placeholder="아이디입력">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -47,7 +47,7 @@ include "server_connect/connect.php";
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="비밀번호입력">
+						<input class="input100" type="password" name="password" placeholder="비밀번호입력">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>

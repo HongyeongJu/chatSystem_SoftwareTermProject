@@ -39,7 +39,7 @@ var chatManager = new function(){
         idle = false;
 
         // Ajax 통신
-        xmlHttp.open("GET", "./proc.php?date=" + encodeURIComponent(finalDate), true);
+        xmlHttp.open("GET", "proc.php?date=" + encodeURIComponent(finalDate), true);
         xmlHttp.send();
     }
 
@@ -140,7 +140,7 @@ var chatManager = new function(){
         param.push("msg=" + encodeURIComponent(msg));
 
         // Ajax 통신
-        xmlHttpWrite.open("POST", "./write.php", true);
+        xmlHttpWrite.open("POST", "write.php", true);
         xmlHttpWrite.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xmlHttpWrite.send(param.join('&'));
 

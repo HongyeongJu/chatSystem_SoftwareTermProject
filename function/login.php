@@ -8,11 +8,11 @@
 
 
 include "../server_connect/connect.php";
-$id = $_POST[id];
+$user_id = $_POST[user_id];
 $password = $_POST[password];
 
 
-$sql = "select * from user where user_id ='$id';";
+$sql = "select * from user where user_id ='$user_id';";
 $result = mysql_query($sql, $connect);
 
 $row = mysql_fetch_array($result);
@@ -20,8 +20,8 @@ $row = mysql_fetch_array($result);
 if(isset($row)) {
     if($password == $row[password]){
         //Login Success
-        $_SESSION[id] = $id;
-
+        $_SESSION[user_id] = $user_id;
+        echo "<script> location.replace('../chatSystem/chat.php');</script>";
     }else {
         // Login Failed
         echo "<script>alert('비밀번호가 일치하지 않습니다.'); </script>";
@@ -30,6 +30,6 @@ if(isset($row)) {
 }else {
     echo "<script> alert('아이디가 없습니다'); </script>";
 }
-echo "<script> location.replace('../index.php');</script>";
+echo "<script> location.replace('../login.php');</script>";
 
 ?>

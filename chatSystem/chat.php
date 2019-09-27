@@ -1,10 +1,15 @@
+<?php
+include "../server_connect/connect.php";
+echo ("ㅎㅇㅎㅇ$_SESSION[user_id]");
+?>
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>채팅코드</title>
+<title>채팅시스템</title>
 <meta charset="utf-8">
-<script type="text/javascript" src="./tt.js"></script>
-<link rel="stylesheet" type="text/css" href="./chat2.css" />
+<script type="text/javascript" src="tt.js"></script>
+<link rel="stylesheet" type="text/css" href="chat2.css" />
 </head>
 <body>
 
@@ -12,17 +17,17 @@
     .chat-box {
         position: fixed;
         top : 50px;
-        right:70px;
+        left:300px;
         width: 300px;
     }
 
     .chat_form
     {
-        width			: 340px;
+        width			: 1000px;
         padding			: 5px;
         margin-top		: 5px;
         border			: 1px solid #ffffff;
-        background		: #000000;
+        background		: #007bff;
         font-size		: 0;
     }
     .chat_form input#name
@@ -36,7 +41,7 @@
     }
     .chat_form input#msg
     {
-        width			: 280px;
+        width			: 800px;
         margin-right	: 5px;
         padding			: 2px;
         border			: 1px solid #ccc;
