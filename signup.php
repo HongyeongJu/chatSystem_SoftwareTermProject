@@ -10,7 +10,7 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Au Register Forms by Colorlib</title>
+    <title>아우누리 학사종합시스템 회원가입</title>
 
     <!-- Icons font CSS-->
     <link href="DesignFolder/signupfolder/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -31,26 +31,40 @@
         <div class="wrapper wrapper--w680">
             <div class="card card-4">
                 <div class="card-body">
-                    <h2 class="title">Registration Form</h2>
+                    <h2 class="title">한국기술교육대 학사종합시스템 회원가입</h2>
                     <form method="POST">
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">first name</label>
-                                    <input class="input--style-4" type="text" name="first_name">
+                                    <label class="label">아이디</label>
+                                    <input class="input--style-4" type="text" name="user_id">
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">last name</label>
-                                    <input class="input--style-4" type="text" name="last_name">
+                                    <label class="label">패스워드</label>
+                                    <input class="input--style-4" type="password" name="password">
                                 </div>
                             </div>
                         </div>
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">Birthday</label>
+                                    <label class="label">이름</label>
+                                    <input class="input--style-4" type="text" name="name">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">학번</label>
+                                    <input class="input--style-4" type="text" name="admission_year">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">생년월일</label>
                                     <div class="input-group-icon">
                                         <input class="input--style-4 js-datepicker" type="text" name="birthday">
                                         <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
@@ -59,14 +73,14 @@
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">Gender</label>
+                                    <label class="label">성별</label>
                                     <div class="p-t-10">
-                                        <label class="radio-container m-r-45">Male
-                                            <input type="radio" checked="checked" name="gender">
+                                        <label class="radio-container m-r-45">남성
+                                            <input type="radio" checked="checked" name="gender" value="male">
                                             <span class="checkmark"></span>
                                         </label>
-                                        <label class="radio-container">Female
-                                            <input type="radio" name="gender">
+                                        <label class="radio-container">여성
+                                            <input type="radio" name="gender" value="female">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
@@ -76,31 +90,36 @@
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">Email</label>
-                                    <input class="input--style-4" type="email" name="email">
+                                    <label class="label">주소</label>
+                                    <input class="input--style-4" type="text" name="address">
                                 </div>
                             </div>
                             <div class="col-2">
                                 <div class="input-group">
-                                    <label class="label">Phone Number</label>
+                                    <label class="label">핸드폰 번호</label>
                                     <input class="input--style-4" type="text" name="phone">
                                 </div>
                             </div>
                         </div>
                         <div class="input-group">
-                            <label class="label">Subject</label>
+                            <label class="label">전공</label>
                             <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="subject">
-                                    <option disabled="disabled" selected="selected">Choose option</option>
-                                    <option>Subject 1</option>
-                                    <option>Subject 2</option>
-                                    <option>Subject 3</option>
+                                <select name="major">
+                                    <option disabled="disabled" selected="selected">전공을 선택하세요</option>
+                                    <option>기계공학부</option>
+                                    <option>메카트로닉스공학부</option>
+                                    <option>전기전자통신공학부</option>
+                                    <option>컴퓨터공학부</option>
+                                    <option>디자인.건축공학부</option>
+                                    <option>에너지신소재화학공학부</option>
+                                    <option>산업경영학부</option>
                                 </select>
                                 <div class="select-dropdown"></div>
                             </div>
                         </div>
+
                         <div class="p-t-15">
-                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                            <button class="btn btn--radius-2 btn--blue" type="submit">회원가입</button>
                         </div>
                     </form>
                 </div>
