@@ -1,9 +1,12 @@
+<?php
+include "server_connect/connect.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <!-- Required meta tags-->
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Colorlib Templates">
     <meta name="author" content="Colorlib">
@@ -32,7 +35,7 @@
             <div class="card card-4">
                 <div class="card-body">
                     <h2 class="title">한국기술교육대 학사종합시스템 회원가입</h2>
-                    <form method="POST">
+                    <form method="POST" action="function/signup.php">
                         <div class="row row-space">
                             <div class="col-2">
                                 <div class="input-group">

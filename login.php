@@ -1,8 +1,11 @@
+<?php
+include "server_connect/connect.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>아우누리 종합정보 시스템 로그인</title>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="DesignFolder/LoginFolder/images/icons/favicon.ico"/>
